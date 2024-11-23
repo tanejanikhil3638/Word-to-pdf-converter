@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word to PDF Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Word to PDF Converter</h1>
+    <form id="uploadForm">
+        <label for="fileInput">Choose a .docx file:</label>
+        <input type="file" id="fileInput" name="file" required>
+        
+        <label for="passwordInput">Enter a password for the PDF:</label>
+        <input type="password" id="passwordInput" name="password" placeholder="Password for PDF (optional)" />
+
+        <button type="submit">Upload and Convert</button>
+    </form>
+    <p id="metadata"></p>
+    <p id="downloadLink"></p>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
