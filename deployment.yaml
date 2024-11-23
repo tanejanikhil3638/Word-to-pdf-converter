@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: word-to-pdf-converter
-          image: Taneja28/word-to-pdf-converter:latest
+          image: taneja28/word-to-pdf-converter:latest
           ports:
             - containerPort: 5000
