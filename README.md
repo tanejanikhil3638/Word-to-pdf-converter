@@ -19,14 +19,14 @@ This is a web application that allows users to upload a `.docx` file, convert it
 
 3. Run the Flask app:
     ```bash
-    python app. py
+    python app.py
     ```
 
 ### Docker
 
 1. Build the Docker image:
     ```bash
-    docker build -t word-to-pdf-converter .
+    docker build -t word-to-pdf-converter 
     ```
 
 2. Run the Docker container:
